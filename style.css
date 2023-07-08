@@ -247,6 +247,44 @@ h3 {
     opacity: 1;
 }
 
+/* Recriutor */
+.recruitor {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+
+}
+
+.r-row {
+    display: flex;
+    justify-content: center;
+    margin-top: 28px;
+    /* background-color: #555; */
+}
+
+.r-col {
+    flex-basis: 9%;
+}
+
+.r-col img {
+    width: 100%;
+    height: 85px;
+    padding: 2px 22px;
+    margin: auto;
+}
+
+@media(max-width:700px) {
+    .r-row {
+        flex-direction: column;
+    }
+
+    .r-col img {
+        width: 80%;
+        height: 100px;
+    }
+}
+
 /* facilities */
 
 .facilities {
@@ -286,6 +324,7 @@ h3 {
     text-align: center;
     padding-top: 50px;
 }
+
 
 .departments-col {
     flex-basis: 31%;
@@ -688,4 +727,122 @@ h3 {
 
 .g-col p {
     padding: 15px 0px 25px;
+}
+
+/* NEW FOOTER */
+.foot {
+    width: 100%;
+    margin: auto;
+    background: #181818;
+    text-align: center;
+    padding: 5px;
+}
+
+.foot-row {
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot-col {
+    flex-basis: 23%;
+    margin-bottom: 0;
+    padding: 15px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: white;
+}
+
+.foot-col h3 {
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
+    border-bottom: 2px solid rgb(0, 206, 107);
+}
+
+.foot-col p {
+    text-align: left;
+    font-size: 16px;
+}
+
+.foot-col h2 {
+    text-align: left;
+    font-size: 30px;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.foot-col ul li {
+    list-style: none;
+    display: block;
+    padding: 5px 0px;
+}
+
+.foot-col ul li a {
+    list-style: none;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    display: block;
+    padding: 2px 0px;
+    text-align: left;
+}
+
+.foot-end {
+    width: 100%;
+    margin: auto;
+    background: #202020;
+    text-align: center;
+    padding: 5px;
+}
+
+.cright {
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.cright-elements {
+    flex-basis: 35%;
+}
+
+.cright-elements h2 {
+    font-size: 16px;
+}
+
+.cright-elements .fa {
+    cursor: pointer;
+    font-size: 34px;
+    padding: 2px 40px;
+}
+
+@media(max-width:700px) {
+    .foot-row {
+        flex-direction: column;
+    }
+
+    .foot-col h3,
+    .foot-col h2,
+    .foot-col p {
+        text-align: center;
+    }
+
+    .cright-elements h3 {
+        font-size: 12px;
+    }
+
+    .cright-elements .fa {
+        font-size: 15px;
+    }
+
+    .foot-col ul li a {
+        list-style: none;
+        text-decoration: none;
+        font-size: 13px;
+        color: white;
+        display: block;
+        padding: 2px 0px;
+        text-align: center;
+    }
 }
